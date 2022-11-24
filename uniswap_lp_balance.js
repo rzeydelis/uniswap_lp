@@ -19,7 +19,7 @@ const IUniswapV3FactoryABI = JSON.parse(facto);
 let NFT = fs.readFileSync('UniV3NFT.json');
 const IUniswapV3NFTmanagerABI = JSON.parse(NFT);
 
-const provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/fRrLGBzCur7V6wCQjGRPdtmTUQzjCk2F")
+const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_ID)
 
     // V3 standard addresses (different for celo)
 const factory = "0x1F98431c8aD98523631AE4a59f267346ea31F984";
