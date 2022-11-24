@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "dependencies": {
+    "@uniswap/sdk": "^3.0.3",
+    "debugout": "^1.0.0",
+    "ethers": "^5.7.2",
+    "prompt-sync": "^4.2.0",
+    "readline-promise": "^1.0.5",
+    "readline-sync": "^1.4.10"
+  }
+}
