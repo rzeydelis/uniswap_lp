@@ -1,6 +1,6 @@
 # Uniswap Balance Checker
 
-Pull the Token A and B of your pool and check if one of them is below 10% of your total token balance.
+Pull the Token A and Token B of your pool and check if one of them is below 10% of your total token balance.
 
 Currently, this code only works for the StakeWise sETH2/ETH pool.
 
@@ -13,10 +13,17 @@ Clone the project:
 `git clone https://github.com/rzeydelis/uniswap_lp.git`
 
 Go to the project folder:
+
 `cd uniswap_lp`
 
-Then run:
+## Running main app
+
 `python3 main.py`
+
+
+## Find LP Balance
+
+`node uniswap_lp_balance.js`
 
 You may need to install some packages.
 
