@@ -9,13 +9,9 @@ import readlineSync from 'readline-sync';
 
 // Wait for user's response.
 var ALCHEMY_ID = readlineSync.question('Enter Alchemy url/id? ');
-console.log(ALCHEMY_ID);
  
 // Handle the secret text (e.g. password).
-var POOL_ID = readlineSync.question('Enter Pool ID (I.e. 23527)', {
-  hideEchoBack: true // The typed text on screen is hidden by `*` (default).
-});
-console.log(ALCHEMY_ID+ 'and' + POOL_ID);  
+var POOL_ID = readlineSync.question('Enter Pool ID (I.e. 23527)');
 
 
     // ERC20 json abi file
@@ -112,6 +108,6 @@ async function start(positionID){
     let tokens = await getTokenAmounts(data.liquidity, data.SqrtX96, data.tickLow, data.tickHigh, data.T0d, data.T1d);
 }
 
-start(273381)
+start(POOL_ID)
 // Also it can be used without the position data if you pull the data it will work for any range
 getTokenAmounts(12558033400096537032, 20259533801624375790673555415)
