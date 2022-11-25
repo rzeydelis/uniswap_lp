@@ -19,12 +19,12 @@ def token_bal_check():
         if count == 3:
             line = line.split(',')
             line = [i.strip() for i in line]
-            seth = float(str(line).rsplit(':', 1)[1][:-2].strip())
+            eth = float(str(line).rsplit(':', 1)[1][:-2].strip())
 
         if count == 4:
             line = line.split(',')
             line = [i.strip() for i in line]
-            eth = float(str(line).rsplit(':', 1)[1][:-2].strip())  
+            seth = float(str(line).rsplit(':', 1)[1][:-2].strip())  
 
     min_req_token_bal = (seth + eth) * .1
     if seth < min_req_token_bal: # tokenBal shouldn't be under 10% of the entire LP amount
