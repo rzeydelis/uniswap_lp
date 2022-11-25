@@ -1,6 +1,6 @@
 # Uniswap Balance Checker
 
-Pull the Token A and Token B of your pool and check if one of them is below 10% of your total token balance.
+Pull the balance of Token A and Token B in your Uniswap V3 Liquidity Pool and check if one of them is below 10% of your total token balance.
 
 Currently, this code only works for the StakeWise sETH2/ETH pool.
 
