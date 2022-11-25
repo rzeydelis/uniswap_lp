@@ -3,7 +3,7 @@ import re
 
 
 def token_bal_check():
-    os.system("node uniswap_lp_balance.js")
+    os.system("node uniswap_lp_balance.js") # run js script in terminal
     file = open('logresults.txt', mode = 'r', encoding = 'utf-8-sig')
     lines = file.readlines()
     file.close()
