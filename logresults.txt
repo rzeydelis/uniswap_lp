@@ -1,4 +1,0 @@
-Amount Token0 : NaN
-Amount Token1 : NaN
-Amount Token0 : 69.254614100608122840
-Amount Token1 : 39.931581051590548270
