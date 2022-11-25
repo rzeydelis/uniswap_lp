@@ -98,8 +98,8 @@ async function getTokenAmounts(liquidity,sqrtPriceX96,tickLow,tickHigh,token0Dec
 
     // console.log("Amount Token0 wei: "+amount0wei);
     // console.log("Amount Token1 wei: "+amount1wei);
-    console.log("Amount Token0 : "+amount0Human);
-    console.log("Amount Token1 : "+amount1Human);
+    console.log("sETH2 Balance : "+amount0Human);
+    console.log("ETH Balance : "+amount1Human);
     return [amount0wei, amount1wei]
 }
 
