@@ -15,18 +15,18 @@ var POOL_ID = readlineSync.question('Enter Pool ID (I.e. 23527)');
 
 
     // ERC20 json abi file
-let ERC20Abi = fs.readFileSync('Erc20.json');
+let ERC20Abi = fs.readFileSync('required_files/Erc20.json');
 const ERC20 = JSON.parse(ERC20Abi);
 
     // V3 pool abi json file
-let pool = fs.readFileSync('V3PairAbi.json');
+let pool = fs.readFileSync('required_files/V3PairAbi.json');
 const IUniswapV3PoolABI = JSON.parse(pool);
 
     // V3 factory abi json
-let facto = fs.readFileSync('V3factory.json');
+let facto = fs.readFileSync('required_files/V3factory.json');
 const IUniswapV3FactoryABI = JSON.parse(facto);
 
-let NFT = fs.readFileSync('UniV3NFT.json');
+let NFT = fs.readFileSync('required_files/UniV3NFT.json');
 const IUniswapV3NFTmanagerABI = JSON.parse(NFT);
 
 
