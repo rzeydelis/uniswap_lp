@@ -8,6 +8,7 @@
   "dependencies": {
     "@uniswap/sdk": "^3.0.3",
     "debugout": "^1.0.0",
+    "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
     "prompt-sync": "^4.2.0",
     "readline-promise": "^1.0.5",

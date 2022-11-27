@@ -3,12 +3,14 @@ import { ethers } from 'ethers';
 import * as fs from 'fs';
 import readline from 'readline';
 import readlineSync from 'readline-sync';
+import * as dotenv from 'dotenv';
 
 ////
 //// User input for Alchemy url/id and LP Pool
 
 // Wait for user's response.
-var ALCHEMY_ID = readlineSync.question('Enter Alchemy url/id? ');
+// var ALCHEMY_ID = readlineSync.question('Enter Alchemy url/id? ');
+var ALCHEMY_ID = process.env.ALCHEMY_ID;
  
 // Handle the secret text (e.g. password).
 var POOL_ID = readlineSync.question('Enter Pool ID (I.e. 23527)');
@@ -30,14 +32,13 @@ let NFT = fs.readFileSync('required_files/UniV3NFT.json');
 const IUniswapV3NFTmanagerABI = JSON.parse(NFT);
 
 
-// const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_ID)
+const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_ID)
 
     // V3 standard addresses (different for celo)
 const factory = "0x1F98431c8aD98523631AE4a59f267346ea31F984";
 const NFTmanager = "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
 
 async function getData(tokenID){
-    const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_ID)
 
     let FactoryContract = new ethers.Contract(factory, IUniswapV3FactoryABI, provider);
 
