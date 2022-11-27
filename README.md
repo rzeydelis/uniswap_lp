@@ -31,4 +31,4 @@ You may need to install some packages.
 
 # Future improvements
 1. Implement a way to configure your pool_id, so you don't have to enter it everytime you run the code.
-2. Implement an alert system (i.e. Telegram).
+2. Implement an alert system (i.e. Telegram, SMTP, etc).
